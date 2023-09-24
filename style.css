@@ -1,59 +1,46 @@
-*,
-*:before,
-*:after{
-    padding: 0;
+body  {
     margin: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to left bottom,rgb(182, 216, 16) ,rgb(181, 46, 118));
+    font-family: monospace,sans-serif;
+    color: darkorchid;
 }
-body{
-    height: 100vh;
-    background: linear-gradient(
-        to right,
-        #7f53ac,
-        #657ced
-    );
+.container  {
+    background: rgba(255,255,255,0.3);
+    padding: 20px;
+    border-radius: 10;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4); 
+    width: 80;
+    max-width: 450;
+    min-width: 350;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
 }
-.container{
-    position: absolute;
-    width: 50%;
-    min-width: 580px;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    background-color: #ffffff;
-    padding: 50px 10px;
-    border-radius: 5px;
-    display: grid;
-    justify-items: center;
-    font-family: 'Poppins',sans-serif;
+.heading {
+    font-size: 33;
 }
-h3{
-    font-size: 16px;
-    font-weight: 600;
-}
-input[type="text"]{
-    width: 90px;
-    font-weight: 600;
-    color: #663399;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 30px;
-    border-radius: 5px;
-    border: 2px solid #202020;
-    font-size: 28px;
-}
-button{
-    width: 160px;
-    padding: 15px 0;
-    border-radius: 5px;
-    background-color: #663399;
-    color: #ffffff;
-    border: none;
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-size: bold;
     font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    outline: none;
 }
-p{
-    font-weight: 400;
+input {
+    width: 220px;
+    font-family: monospace;
+    float: right;
+    padding: 5px;
+    outline: none;
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.6);
+    color: darkgreen;
+    font-size: 18px;
+}
+input::placeholder {
+    color: darkgrey;
 }
